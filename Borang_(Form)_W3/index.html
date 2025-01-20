@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borang (Form)</title>
+    <link rel="icon" type="image/x-icon" href="asset/nav-icon/logo.png">
+    <link rel="stylesheet" href="asset/style.css">
+</head>
+<body>
+    <div class="header">
+        <header>
+            <img class="hd-icon" src="asset/nav-icon/logo.png" alt="BIG BOOKSHELF">
+            <h1>BIG BOOKSHELF</h1>
+        </header>
+    </div>
+
+    <main>
+        <h2>REGISTER YOUR BOOK</h2>
+        <form name="borang" action="https://httpbin.org/post" method="post">
+            <fieldset>
+                <legend>Book Details&nbsp;&nbsp;&nbsp;</legend>
+                <br>
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" placeholder="Your book title here. E.g. Harry Potter and The Fantastic Bootcamp" required>
+                <br>
+                <label for="genre">Genre</label>
+                <input type="text" id="genre" name="genre" pattern="[a-zA-Z,.& ]*" title="Only [.] and [,] can be use if multiple genre. E.g. Fantasy, Thriller" placeholder="Your book genre here. E.g. Fantasy" required>
+                <br>
+                <label for="author">Author</label>
+                <input type="text" id="author" name="author" pattern="[a-zA-Z,.& ]*" title="Only [.] and [,] can be use if multiple author. E.g. Ahmad, Johnson" placeholder="Your book author here. E.g. J. K. Rowling" required>
+                <br>
+                <label for="publisher">Publisher</label>
+                <input type="text" id="publisher" name="publisher" pattern="[a-zA-Z,.& ]*" title="Only [.] and [,] can be use if multiple publisher. E.g. Pustaka Maleng, Pustaka Tuah" placeholder="Publisher of the book here. E.g. Pustaka Maleng" required>
+                <br>
+                <label for="year">Year Published</label>
+                <input type="number" id="year" name="year" min="0001" max="9999"  placeholder="1994" required>
+                <br>
+                <label>Availabality</label>
+                <div class="radio">
+                    <input type="radio" id="availabality" name="availabality" value="Online">
+                    <label for="availabality">Online</label>
+                    <input type="radio" id="availabality" name="availabality" value="In store">
+                    <label for="availabality">In store</label>
+                    <input type="radio" id="availabality" name="availabality" value="Online and In store"  required>
+                    <label for="availabality">Online and In store</label>   
+                </div>
+                <br>
+                <label for="pages">Pages</label>
+                <input type="number" id="pages" name="pages" placeholder="514" required>
+                <br>
+                <label for="language">Language</label>
+                <input type="text" id="language" pattern="[a-zA-Z,.& ]*" title="Only [.] and [,] can be use if multiple language. E.g. English, Arab" name="language" placeholder="Language used in book. E.g. English" required>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Registree Details&nbsp;&nbsp;&nbsp;</legend>
+                <br>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" pattern="[a-zA-Z' ]*" placeholder="Your name. E.g. Lannah Yeon" required>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" title="E.g. youremail@yourdomain.com" placeholder="Your email. E.g. l.yeon@gmail.com" required>
+                <br>
+            </fieldset>
+            <section>
+                <input type="checkbox" name="terms-condition" id="terms-condition"  required>
+                <label for="terms-condition">I hereby agree to follow all rules and confirmed that all details are accurate.</label>
+                <br>
+                <div>
+                    <input type="submit" value="SAVE YOUR BOOK">
+                </div>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <div class="child-footer size">
+            <div class="logo-footer">
+                <img class="hd-icon" src="asset/nav-icon/logo.png" alt="BIG BOOKSHELF">
+                <h1>BIG BOOKSHELF</h1>
+            </div>
+            <div class="soc-icon">
+                <img src="asset/nav-icon/instagram.png" alt="Instagram">
+                <img src="asset/nav-icon/facebook.png" alt="Facebook">
+                <img src="asset/nav-icon/twitter.png" alt="Twitter">
+            </div>
+        </div>
+        <div class="child-footer black">
+            <div class="info-footer">
+                <div>Terms and conditions</div>
+                <div>Privacy policy</div>
+            </div>
+            <div class="info-footer">
+                <div>+44 1332 412251</div>
+                <div>support@bbookshelf.com</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

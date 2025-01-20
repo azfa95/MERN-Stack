@@ -1,0 +1,258 @@
+/* Import font */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Reset CSS */
+
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body style */
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+}
+
+/* Header style */
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    height: 80px;
+    gap: 1rem;
+    padding: 0 30px;
+    background-color: #2A2C2E;
+    color: white;
+    font-size: xx-small;
+    border-radius: 20px;
+    margin: 1rem 10px;
+}
+
+.header {
+    padding: 0 1px;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.hd-icon {
+    width: 40px; 
+    height: 40px;
+}
+
+/* Main style */
+
+main {
+    background-color: #2A2C2E;
+    color: white;
+    border-radius: 20px;
+    padding: 30px 30px 10px 30px;
+    max-width: 1260px;
+    margin: 0 10px ;
+}
+
+fieldset {
+    margin: 2rem 0;
+    border-top: 1px solid #ccc;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+legend {
+    font-size: large;
+}
+
+label {
+    width: 15%;
+    min-width: 120px;
+    margin: 0.5rem 0;
+    text-align: justify;
+    align-self: center;
+    white-space: nowrap;
+}
+
+input[type="text"], input[type="number"], input[type="email"] {
+    width: 85%;
+    border-radius: 20px;
+    height: 3rem;
+    padding: 20px;
+    margin: 0.5rem 0;
+    border: none;
+}
+
+.radio {
+    width: 85%;
+    height: 3rem;
+    border: 1px solid #2A2C2E;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+input[type="radio"] {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 1rem;
+}
+
+section {
+    width: 100%;
+    padding: 10px;
+}
+
+section > div {
+    width: 100%;
+    text-align: center;
+}
+
+input[type="submit"] {
+    width: 50%;
+    height: 50px;
+    color: black;
+    background-color: #F4CE47;
+    font-size: large;
+    border-radius: 20px;
+    margin-top: 1rem;
+    border: none;
+    padding: auto 5px;
+}
+
+input {
+    opacity: 0.9;
+}
+
+input:hover, input:focus {
+    opacity: 1;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* Footer styling */
+
+footer {
+    height: 100px;
+    background-color: #2A2C2E;
+    color: white;
+    font-size: xx-small;
+    margin: 1rem 0 0 0;
+    width: 100%;
+    align-content: center;
+}
+
+.child-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.size {
+    height: 5rem;
+}
+
+.soc-icon {
+    display: flex;
+    gap: 30px;
+}
+
+.soc-icon > img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.logo-footer, .info-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.black {
+    background-color: rgba(0, 0, 0, 0.87);
+    height: 1rem;
+}
+
+@media only screen and (max-width: 877px) { 
+    header {
+        flex-direction: column;
+        height: fit-content;
+        padding: 1rem 0;
+    }
+
+    fieldset {
+        justify-content: center;
+    }
+
+    .radio {
+        flex-wrap: wrap;
+        height: fit-content;
+        justify-content: center;
+    }
+
+    .radio > label {
+        white-space: nowrap;
+    }
+
+    label {
+        text-align: center;
+        white-space: normal;
+    }
+
+    input[type="submit"] {
+        min-height: 50px;
+        height: fit-content;
+        white-space: normal;
+    }
+
+    footer {
+        height: fit-content;
+    }
+
+    .child-footer {
+        flex-direction: column;
+        margin-top: 1rem;
+        height: fit-content;
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 625px) { 
+
+    fieldset {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .radio {
+        flex-wrap: wrap;
+        height: fit-content;
+        justify-content: center;
+        max-width: 166px;
+    }   
+
+    .radio > label {
+        white-space: normal;
+    }
+
+    input[type="radio"] + label {
+        display: inline-block;
+    }
+
+}
